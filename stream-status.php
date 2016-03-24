@@ -9,8 +9,7 @@
  			*/
 
 
- 			$streams = array('spiritstr','rockletztv');
- 			$streamer = array ('spirit'=>'spiritstr','rock'=>'rockletztv'); 
+ 			$streams = array('STREAMNAME_2','STREAMNAME_2');
  			$length = count($streams);
  			 for ($i = 0; $i < $length; $i++){
             $twitch_api = json_decode(@file_get_contents('https://api.twitch.tv/kraken/channels/'.$streams[$i])); 
