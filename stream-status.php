@@ -4,6 +4,7 @@
 							Code by SpiritSTR https://github.com/spiritstr
 							Feel free to modify the way you want, but i would be happy if you
 							tweet for @spiritstr saying if this script was useful to you!!!
+							just use include for this file where you want to show the streams.
 
  			*/
 
