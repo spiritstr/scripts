@@ -4,7 +4,7 @@
             // if yoy dont want to use the normal version this one will  //
             // only show you the streamers who are online.               //
             
-           $streams = array('esl_sc2','spiritstr');
+           $streams = array('esl_sc2','spiritstr'); // i used ESL_SC2 and SpiritSTR as an exemple.
  			$length = count($streams);
  			for ($i = 0; $i < $length; $i++){
             $twitch_api = json_decode(file_get_contents(sprintf('https://api.twitch.tv/kraken/streams/%s',strtolower($streams[$i]))), true);
