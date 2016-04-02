@@ -1,0 +1,23 @@
+<?
+      // This script will show the Stream title and an preview from the stream.              //
+      // you only need to modify the array $streams where the nick of the channel should be. //
+      // If are free to modify this file the way you want!                                  //
+      
+       $streams = array('esl_sc2','spiritstr');
+ 		   foreach ($streams as $streams) {
+ 		   $nsapi = file_get_contents("https://api.twitch.tv/kraken/streams/".$streams);
+ 		   $twitchapi = json_decode($nsapi,true);
+ 		   if ($twitchapi['stream']!=null){
+ 		   $name = $twitchapi['stream']['channel']['display_name']."</br>"; 
+ 		   $status = substr($twitchapi['stream']['channel']['status'],0,40)."..."."</br>"; 
+ 		   $preview = "<a href='".$twitchapi['stream']['channel']['url']."'><img src='".$twitchapi['stream']['preview']['medium']."' height='180' width='320'/></a></br>"; 
+ 		   $views = $twitchapi['stream']['viewers']."</br>";
+ 		   echo $status; // Show the stream title //
+ 		   echo "Views: ".$views; // Show views online
+ 		   echo $preview; // Show image preview
+ 		}
+    }
+
+
+
+?>
