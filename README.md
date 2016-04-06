@@ -9,3 +9,8 @@ to recive new streamers without need to edit the file.
 # Twitch Check Status V1.5
 
 Same as V1, but will only show online streamers.
+
+# GMs NA,EU and KR
+
+After twitch api i decided to give a try to the Battle.net API, and it was really good, in under 1h i had all GM ladders.
+All the scripts need you to use your own battle.net api key, just google it.
